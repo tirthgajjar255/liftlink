@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "512286530594",
+    "project_id": "liftlink-c1d90",
+    "storage_bucket": "liftlink-c1d90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512286530594:android:227551dd2e21cdcf707e7b",
+        "android_client_info": {
+          "package_name": "com.example.liftlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512286530594-g2gpnlodbght9fjrnui8v5b8bm657a9d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.liftlink",
+            "certificate_hash": "8a08e0a052e7d206d779fe13365e2a5763cccd30"
+          }
+        },
+        {
+          "client_id": "512286530594-7023d77ui2m882jtiu6ol293j52lfpai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWKTqROuFkpqWVsRx55rQJswlfNC5F4Kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512286530594-7023d77ui2m882jtiu6ol293j52lfpai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "512286530594-0081gv9m79rustfrfbuf6jt84annd1lv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.liftlink"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

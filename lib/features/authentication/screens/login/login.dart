@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -8,7 +7,7 @@ import 'package:liftlink/utils/constants/image_strings.dart';
 import 'package:liftlink/utils/constants/sizes.dart';
 import 'package:liftlink/utils/helpers/helper_functions.dart';
 import 'package:liftlink/utils/constants/text_strings.dart';
-
+import '../password_configuration/forget_password.dart';
 
 
 class LoginScreen extends StatelessWidget {
@@ -63,18 +62,18 @@ class LoginScreen extends StatelessWidget {
                         ],
                       ),
 
-                      TextButton(onPressed: (){}, child: const Text(LTexts.forgetPassword)),
+                      TextButton(onPressed: ()=> Get.to(() => const ForgetPassword()), child: const Text(LTexts.forgetPassword)),
                     ],
                   ),
                     const SizedBox(height: LSizes.spaceBtwSections),
 
-                    SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: Text(LTexts.signIn))),
+                    SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(LTexts.signIn))),
                     const SizedBox(height: LSizes.spaceBtwSections),
 
 
                     SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(onPressed: () => Get.to(() => const SignupScreen()), child: Text(LTexts.createAccount))),
+                        child: OutlinedButton(onPressed: () => Get.to(() => const SignupScreen()), child: const Text(LTexts.createAccount))),
 
                   ],
                 ),

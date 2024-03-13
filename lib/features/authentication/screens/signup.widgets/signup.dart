@@ -1,8 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:liftlink/utils/constants/colors.dart';
+import 'package:liftlink/features/authentication/screens/signup.widgets/verify_email.dart';
 import 'package:liftlink/utils/constants/sizes.dart';
 import 'package:liftlink/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
@@ -57,7 +55,7 @@ class SignupScreen extends StatelessWidget {
                     TextFormField(
                       expands: false,
                       decoration: const InputDecoration(labelText: LTexts.CompanyName, prefixIcon: Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: EdgeInsets.all(10.0),
                         child: ImageIcon(
                           AssetImage('assets/icons/company_icon.png'),
                           size: 10, // Adjust size as needed
@@ -70,7 +68,7 @@ class SignupScreen extends StatelessWidget {
                     TextFormField(
                       expands: false,
                       decoration: const InputDecoration(labelText: LTexts.Area, prefixIcon: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                      padding: EdgeInsets.all(10.0),
                       child: ImageIcon(
                         AssetImage('assets/icons/area_icon.png'),
                         size: 5),
@@ -89,32 +87,32 @@ class SignupScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: LSizes.spaceBtwSections),
 
-                    Row(
-                      children: [
-                        SizedBox(width: 24, height: 24, child: Checkbox(value: true, onChanged: (value){})),
-                        const SizedBox(height: LSizes.spaceBtwItems),
-                        Text.rich(TextSpan(
-                          children: [
-                            TextSpan(text: '${LTexts.iAgreeTo} ', style: Theme.of(context).textTheme.bodySmall),
-                            TextSpan(text: '${LTexts.privacyPolicy} ', style: Theme.of(context).textTheme.bodySmall!.apply(
-                              color: dark ? LColors.white : LColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark ? LColors.white : LColors.primary,
-                            )),
-                            TextSpan(text: '${LTexts.and} ', style: Theme.of(context).textTheme.bodySmall),
-                            TextSpan(text: LTexts.termsOfUse, style: Theme.of(context).textTheme.bodySmall!.apply(
-                              color: dark ? LColors.white : LColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark ? LColors.white : LColors.primary,
-                            )),
-                            ]
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: LSizes.spaceBtwSections),
+                    // Row(
+                    //   children: [
+                    //     SizedBox(width: 24, height: 24, child: Checkbox(value: true, onChanged: (value){})),
+                    //     const SizedBox(height: LSizes.spaceBtwItems),
+                    //     Text.rich(TextSpan(
+                    //       children: [
+                    //         TextSpan(text: '${LTexts.iAgreeTo} ', style: Theme.of(context).textTheme.bodySmall),
+                    //         TextSpan(text: '${LTexts.privacyPolicy} ', style: Theme.of(context).textTheme.bodySmall!.apply(
+                    //           color: dark ? LColors.white : LColors.primary,
+                    //           decoration: TextDecoration.underline,
+                    //           decorationColor: dark ? LColors.white : LColors.primary,
+                    //         )),
+                    //         TextSpan(text: '${LTexts.and} ', style: Theme.of(context).textTheme.bodySmall),
+                    //         TextSpan(text: LTexts.termsOfUse, style: Theme.of(context).textTheme.bodySmall!.apply(
+                    //           color: dark ? LColors.white : LColors.primary,
+                    //           decoration: TextDecoration.underline,
+                    //           decorationColor: dark ? LColors.white : LColors.primary,
+                    //         )),
+                    //         ]
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
+                    // const SizedBox(height: LSizes.spaceBtwSections),
 
-                    SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(LTexts.createAccount))),
+                    SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const VerifyEmailScreen()), child: const Text(LTexts.createAccount),),),
                     ],
                   ),
                 ),
